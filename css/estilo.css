@@ -1,0 +1,44 @@
+
+/***** CSS general *****/
+
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+hr {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-top: 1px solid gray;
+    width: 75%;
+    color: gray;
+}
+img {
+    width: 100%;
+}
+
+/**
+ * CSS PARA CELULARES
+ ---------------------------------------------------------------------------**/
+
+ @media screen and (min-width: 320px) {
+ }
+
+ /**
+ * CSS PARA LAPTOPS Y TABLETS
+ ---------------------------------------------------------------------------**/
+@media screen and (min-width: 768px) {
+}
+
+/**
+ * CSS PARA PCs
+ ---------------------------------------------------------------------------**/
+
+ @media screen and (min-width: 1024px) {
+ }
+
+ /**
+ * CSS PARA TVs
+ ---------------------------------------------------------------------------**/
+@media screen and (min-width: 1440px) {
+}
