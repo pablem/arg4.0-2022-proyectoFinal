@@ -1,44 +1,124 @@
 
 /***** CSS general *****/
 
-*{
+* {
     margin: 0;
-    padding: 0;
     border: 0;
+    padding: 0;
+    /* box-sizing: border-box; */
 }
-hr {
-    margin-top: 10px;
-    margin-bottom: 10px;
-    border-top: 1px solid gray;
-    width: 75%;
-    color: gray;
+/* body {
+    margin-top: 40px;
+} */
+body > section {
+    padding: 1em;
+    padding-top: 7em;
 }
-img {
-    width: 100%;
+section {
+    background-color: #BFD696;
+}
+nav, footer {
+    background-color: #a8c080;
+}
+article {
+    padding: 2em;
+    /* padding-left: 8%; */
+    margin-block: 0.5em;
+}
+main > article:nth-child(even) {
+    background-color: #fff5c7da;
+    border-radius: 2em 0;
+}
+main > article:nth-child(odd) {
+    background-color: #ffe1e1d8;
+    border-radius: 0 2em;
+}
+h1 {
+    margin-right: 1em;
+    font-family: 'IBM Plex Sans Arabic', sans-serif;
+}
+h2 {
+    text-align: center;
+    text-shadow: 1px 1px 2px;
+    padding: 0.5em;
+    padding-bottom: 1em;
 }
 
+h1 > a {
+    color: black;
+    text-decoration: none;
+}
+article p, article ul {
+    font-family: 'Noto Sans', sans-serif;
+    font-size: medium;
+    
+}
+nav ul, h2 {
+    font-family: 'Unica One', cursive;
+}
+hr {
+    width: 90%;
+    border-top: 1px solid gray;
+    color: gray;
+}
+img { 
+    width: 100%;
+}
+#perfil p {
+    text-align: justify;
+}
+footer {
+    padding: 1em;
+    text-align: center;
+    box-sizing: border-box
+}
+.material-symbols-outlined {
+  font-size: 2rem;
+}
+#detalles1 li, #detalles2 li {
+    display: none;
+}
 /**
  * CSS PARA CELULARES
  ---------------------------------------------------------------------------**/
 
- @media screen and (min-width: 320px) {
+ @media screen and (min-width: 576px) {
+    article {
+        margin-block: 2em;
+    }
+    article p, article ul {
+        font-size: 1.4rem;
+    }
+    h2 {
+        font-size: xx-large;
+    }
+    nav ul {
+        font-size: larger;
+    }
  }
 
  /**
  * CSS PARA LAPTOPS Y TABLETS
  ---------------------------------------------------------------------------**/
 @media screen and (min-width: 768px) {
+    figure {
+        max-width: 20%;
+    }
+
 }
 
 /**
  * CSS PARA PCs
  ---------------------------------------------------------------------------**/
 
- @media screen and (min-width: 1024px) {
+ @media screen and (min-width: 992px) {
  }
+
+ @media screen and (min-width: 1200px) {
+}
 
  /**
  * CSS PARA TVs
  ---------------------------------------------------------------------------**/
-@media screen and (min-width: 1440px) {
+@media screen and (min-width: 1400px) {
 }
